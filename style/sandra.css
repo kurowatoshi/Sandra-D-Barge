@@ -1,0 +1,758 @@
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 50px;
+    position: relative;
+    flex-wrap: wrap; /* Ensures items wrap on small screens */
+}
+
+.navbar-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 28px;
+    margin-left: 10%;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 4px solid #C6D090;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-button:hover {
+    background-color: #dddddd;
+}
+
+.dropdown-icon {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-icon svg {
+    fill: #000000;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.contact-button {
+    background-color: #000000;
+    color: #BEC980;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    border-radius: 25px;
+}
+
+.contact-button:hover {
+    background-color: #141414;
+}
+
+/* Book Review Section Styles */
+.book-review {
+    border: 4px solid #BEC980;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.review-description {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.review-title-please {
+    padding: 20px;
+}
+
+.review-title-please p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.review-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 4px solid #BCC67E;
+    border-radius: 12px;
+    background-color: transparent;
+    font-family: "Imbue", serif;
+    font-weight: 400;
+    display: inline-block;
+}
+
+/* Review Text Container */
+.review-text-container {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+
+.review-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 20px;
+}
+
+.review-text.active {
+    opacity: 1;
+}
+
+/* Star Rating */
+.star-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.star-rating i {
+    color: gold;
+    font-size: 1.68rem;
+}
+
+/* Review Cover */
+.review-cover {
+    flex: 1;
+    text-align: center;
+}
+
+.review-cover img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Button Container */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px; /* Space between buttons */
+}
+
+.button-container a {
+    display: inline-block;
+    width: 120px; /* Consistent width */
+    height: 40px; /* Consistent height */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image does not overflow */
+}
+
+.btn-primary img, .btn-secondary img {
+    display: block;
+    width: 100%; /* Ensures the image fills the button */
+    height: 100%; /* Ensures the image fits the button's height */
+    object-fit: cover; /* Ensures the image covers the button area */
+}
+
+
+
+/* Book Flex Section Styles */
+.book-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 4px solid #BEC980;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.book-flex-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Space between book cover and description */
+    max-width: 1200px;
+    width: 100%;
+}
+
+.book-cover {
+    flex: 1;
+    text-align: center;
+}
+
+.book-cover img {
+    max-width: 100%; /* Ensures the image scales down properly */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the book cover */
+}
+
+.book-description {
+    flex: 2;
+    padding: 80px;
+}
+
+.book-description h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.book-description p {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    color: #000000;
+    font-family: "Judson", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Button Container within .book-flex */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between buttons */
+}
+
+.button-container a {
+    display: inline-block;
+    width: 150px; /* Increased width for bigger buttons */
+    height: 50px; /* Increased height for bigger buttons */
+    border-radius: 10px; /* Rounded corners for the buttons */
+    overflow: hidden; /* Ensures the image does not overflow */
+}
+
+.btn-primary img, .btn-secondary img {
+    display: block;
+    width: 100%; /* Ensures the image fills the container */
+    height: 100%; /* Ensures the image fits the button's height */
+    object-fit: cover; /* Ensures the image covers the button area */
+}
+.btn-primary img{
+    border: 2px solid black;
+    border-radius: 15%;
+}
+
+/* Slick Carousel Override Styles */
+.slick-slide {
+    text-align: center;
+}
+
+.slick-prev, .slick-next {
+    font-size: 24px;
+    color: #333;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+/* Ensure the slider is centered and maintains consistency */
+.slider1 {
+    display: flex !important;
+    justify-content: center !important; /* Center items horizontally */
+    align-items: center !important; /* Center items vertically */
+    margin-top: 2%;
+    position: relative;
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center; /* Center iframe horizontally */
+    align-items: center; /* Center iframe vertically */
+}
+
+.slick-slide iframe {
+    width: 100%;
+    max-width: 560px; /* Fixed width for consistency */
+    height: 315px; /* Fixed height for consistency */
+    border-radius: 10px; /* Rounded corners for the iframe */
+}
+
+
+.youtube-video {
+    border: 4px solid #BEC980;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.container-contact {
+    border: 4px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 90px;
+    margin: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-us {
+    background-color: #BEC980;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info{
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for larger size */
+    margin-bottom: 20px;
+    border: 4px solid #FFFFFF; /* 4px white border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: transparent; /* Transparent background */
+    color: #000000; /* Text color */
+    font-size: 16px; /* Font size for better readability */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+    margin-bottom: 20px;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+.contact-form button {
+    background-color: #000000;
+    color: #BEC980;
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    align-self: flex-end; /* Aligns the button to the right */
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Wrap the button in a container */
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Aligns the button to the right */
+    margin-top: 20px;
+}
+
+
+.contact-form button:hover {
+    background-color: #333333;
+}
+
+.contact-info {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-info h2 {
+    font-size: 94px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color: #333;
+    text-align: right;
+}
+.contact-info h3 {
+    font-size: 94px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color: #333;
+    text-align: right;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 60px;
+    margin-top: -30px;
+}
+
+.footer-class {
+    border: 4px solid #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: -5%;
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+.footer-title {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Koulen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-class p {
+    margin-top: -3px; /* Add spacing between the title and paragraph */
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px 5%;
+    }
+
+    .navbar-title {
+        font-size: 18px;
+    }
+
+    .dropdown-button, .contact-button {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+        position: static;
+        box-shadow: none;
+        background-color: #ffffff;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .dropdown-content a {
+        padding: 12px;
+        color: #000000;
+    }
+
+    .book-review, .youtube-video, .container-contact {
+        margin: 10px 5%;
+        padding: 10px;
+    }
+
+    .book-flex, .book-flex-container {
+        flex-direction: column;
+        margin: 10px 5%;
+    }
+
+    .book-cover img {
+        max-width: 90%;
+    }
+
+    .book-description {
+        padding: 10px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container a {
+        width: 100%;
+    }
+
+    .slick-slide iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-form, .contact-info {
+        margin: 10px 0;
+    }
+
+    .contact-info h2, .contact-info h3 {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .footer-title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-title {
+        font-size: 16px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .footer-class {
+        padding: 5px;
+    }
+
+    .footer-title {
+        font-size: 12px;
+    }
+
+    .footer-class p {
+        font-size: 12px;
+    }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container-contact {
+        flex-direction: column;
+    }
+
+    .contact-info{
+        display: none;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .book-flex {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .book-flex-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adjust gap for better spacing */
+    }
+
+    .book-cover, .book-description {
+        width: 100%;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .book-description {
+        padding: 20px;
+    }
+
+    /* Adjust button size for smaller screens */
+    .button-container {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px; /* Space between buttons */
+    }
+
+    .button-container a {
+        width: 120px; /* Adjusted width for smaller screens */
+        height: 45px; /* Adjusted height for smaller screens */
+    }
+}
+
+
+/* Responsive styles for tablets and mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .navbar-title {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .dropdown, .contact-button {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .dropdown-button, .contact-button {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    .dropdown-content {
+        min-width: 100%;
+        position: static;
+        box-shadow: none;
+        background-color: #ffffff;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .dropdown-content a {
+        display: inline-block;
+        padding: 12px 20px;
+        color: #000000;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #d6d1d1;
+    }
+
+    .book-review {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .review-content {
+        flex-direction: column;
+    }
+
+    .review-description {
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding-top: 0px;
+    }
+
+    .button-container {
+        flex-direction: column;
+    }
+
+    .button-container img {
+        width: 90%;
+    }
+}
+
+/* Responsive styles for mobile phones */
+@media (max-width: 480px) {
+    .navbar-title {
+        font-size: 14px;
+    }
+
+    .dropdown-button, .contact-button {
+        font-size: 18px;
+        padding: 12px;
+        border-radius: 25px;
+    }
+
+    .review-description {
+        padding-top: 0px;
+    }
+}
