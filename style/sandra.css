@@ -41,7 +41,7 @@ body {
 .dropdown-button {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    border: 4px solid #C6D090;
+    border: 3px solid #C6D090;
     padding: 12px 24px;
     cursor: pointer;
     font-size: 18px;
@@ -63,8 +63,8 @@ body {
     color: inherit;        /* Optionally, inherit color from parent */
 }
 .dropdown-button:hover {
-    background-color: #000000;
-    color: #C6D090;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .dropdown-icon {
@@ -80,7 +80,7 @@ body {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    border: 4px solid #C6D090;
+    border: 3px solid #C6D090;
     border-radius: 10px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -97,8 +97,8 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #000000;
-    color: #C6D090;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -107,7 +107,7 @@ body {
 
 .contact-button {
     background-color: #ffffff;
-    border: 4px solid #C6D090 !important;
+    border: 3px solid #C6D090 !important;
     color: #000000;
     border: none;
     padding: 12px 24px;
@@ -120,13 +120,13 @@ body {
 }
 
 .contact-button:hover {
-    background-color: #141414;
-    color: #BEC980;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 /* Book Review Section Styles */
 .book-review {
-    border: 4px solid #BEC980;
+    border: 3px solid #BEC980;
     border-radius: 10px;
     padding: 20px;
     margin: 60px;
@@ -169,7 +169,7 @@ body {
     font-size: 24px;
     margin-bottom: 10px;
     padding: 10px;
-    border: 4px solid #BCC67E;
+    border: 3px solid #BCC67E;
     border-radius: 12px;
     background-color: transparent;
     font-family: "Imbue", serif;
@@ -257,7 +257,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border: 4px solid #BEC980;
+    border: 3px solid #BEC980;
     border-radius: 10px;
     padding: 20px;
     margin: 60px;
@@ -328,7 +328,7 @@ body {
     object-fit: cover; /* Ensures the image covers the button area */
 }
 .btn-primary img{
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 15%;
 }
 
@@ -374,7 +374,7 @@ body {
 
 
 .youtube-video {
-    border: 4px solid #BEC980;
+    border: 3px solid #BEC980;
     border-radius: 10px;
     padding: 20px;
     margin: 60px;
@@ -384,7 +384,7 @@ body {
 }
 
 .container-contact {
-    border: 4px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     border-radius: 10px;
     padding: 90px;
     margin-bottom: -1%;
@@ -427,7 +427,7 @@ body {
     width: 100%;
     padding: 15px; /* Increased padding for larger size */
     margin-bottom: 20px;
-    border: 4px solid #FFFFFF; /* 4px white border */
+    border: 3px solid #FFFFFF; /* 4px white border */
     border-radius: 8px; /* Rounded corners */
     background-color: transparent; /* Transparent background */
     color: #000000; /* Text color */
@@ -453,7 +453,7 @@ body {
 .contact-form button {
     background-color: transparent;
     color: #000000;
-    border: 4px solid #FFFFFF !important; /* 4px white border */
+    border: 3px solid #FFFFFF !important; /* 4px white border */
     font-family: "Inika", serif;
     font-weight: 400;
     font-style: normal;
@@ -476,8 +476,8 @@ body {
 
 
 .contact-form button:hover {
-    background-color: #000000;
-    color: #BEC980;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .contact-info {
@@ -523,7 +523,7 @@ body {
 }
 
 .footer-class {
-    border: 4px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     border-radius: 10px;
     padding: 10px;
     margin-top: -0%;
@@ -551,7 +551,7 @@ body {
 }
 
 .about-container {
-    border: 4px solid #C6D090;
+    border: 3px solid #C6D090;
     border-radius: 10px;
     padding: 90px;
     margin-bottom: -1%;
@@ -566,7 +566,7 @@ body {
     padding-bottom: 20px;
 }
 .footer-class1 {
-    border: 4px solid #C6D090;
+    border: 3px solid #C6D090;
     border-radius: 10px;
     padding: 10px;
     margin-top: -0%;
@@ -588,7 +588,7 @@ body {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center;     /* Vertically center */
-    border: 4px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 10px;
     margin-left: 140px;
     margin-right: 140px;
