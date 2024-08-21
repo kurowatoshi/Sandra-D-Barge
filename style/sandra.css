@@ -120,8 +120,8 @@ body {
 }
 
 .contact-button:hover {
-    color: #000000;
-    background-color: #ffffff;
+    color: #C6D090;
+    background-color: black;
 }
 
 /* Book Review Section Styles */
@@ -159,14 +159,14 @@ body {
 }
 
 .review-title-please p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #333;
 }
 
 .review-description h2 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 10px;
     padding: 10px;
     border: 3px solid #BCC67E;
@@ -212,7 +212,7 @@ body {
 
 .star-rating i {
     color: gold;
-    font-size: 1.68rem;
+    font-size: 1.25rem;
 }
 
 /* Review Cover */
@@ -220,6 +220,103 @@ body {
     flex: 1;
     text-align: center;
 }
+/* Container styles */
+.banner-events {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 200px; /* Set a height if needed */
+    overflow: hidden; /* Ensures no overflow if the image is too large */
+    margin-bottom: -50px;
+}
+
+/* Link styles */
+.banner-events a {
+    display: block;
+    width: 350px; /* Adjust the width as needed */
+    height: 100%; /* Makes the link fill the container's height */
+}
+
+/* Image styles */
+.banner-events img {
+    max-width: 100%; /* Prevents the image from exceeding the width of the container */
+    max-height: 100%; /* Prevents the image from exceeding the height of the container */
+    object-fit: contain; /* Ensures the image keeps its aspect ratio */
+}
+
+
+/* General styles for the section */
+.author-facebook {
+    display: flex;
+    justify-content: space-between; /* Spaces out the description and picture */
+    align-items: center; /* Aligns items vertically centered */
+    padding: 60px; /* Add padding around the section */
+    margin-left: 219px;
+    margin-right: 215px;
+    border: 3px solid #BEC980; /* Add a solid border */
+}
+
+/* Container for the description and social buttons */
+.description-container {
+    max-width: 60%; /* Adjust based on how much space you want to allocate */
+    margin-top: -70px;
+}
+
+.description-container h2 {
+    font-family: "Inika", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+}
+/* Description styles */
+.description {
+    margin-bottom: 15px; /* Space between the description and social buttons */
+    font-family: "Inika", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* Container for social buttons */
+.social-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Social button styles */
+.social-buttons a {
+    display: inline-block;
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    text-align: center;
+    line-height: 40px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.social-buttons a:hover {
+    background-color: #e0e0e0; /* Adjust hover color */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.social-buttons img {
+    width: 24px; /* Icon width */
+    height: 24px; /* Icon height */
+}
+
+/* Container for the picture */
+.picture-container {
+    max-width: 40%; /* Adjust based on available space */
+}
+
+.picture-container img {
+    width: 100%; /* Makes the picture fit the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+
+
 
 .review-cover img {
     max-width: 80%;
@@ -297,7 +394,7 @@ body {
 }
 
 .book-description p {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.5;
     margin-bottom: 60px;
     color: #000000;
@@ -476,8 +573,8 @@ body {
 
 
 .contact-form button:hover {
-    color: #000000;
-    background-color: #ffffff;
+    color: #C6D090;
+    background-color: black;
 }
 
 .contact-info {
@@ -502,16 +599,6 @@ body {
     padding-left: 30px; /* Increased space between the line and text */
 }
 
-.contact-info h3::before {
-    content: "";
-    position: absolute;
-    left: 190px; /* Position the line further left */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 250px; /* Increased width for a longer line */
-    height: 8px; /* Increased height for a thicker line */
-    background-color: #FFFFFF; /* White line */
-}
 
 
 .contact-info p {
@@ -592,6 +679,7 @@ body {
     border-radius: 10px;
     margin-left: 140px;
     margin-right: 140px;
+    margin-bottom: -10px;
 }
 
 /* Style the image */
